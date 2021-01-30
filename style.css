@@ -50,6 +50,7 @@ p{
 .upgrades{
     float: right;
     width:30vw;
+    margin-right: 10px;
 }
 .upgrades h2{
     text-decoration-line: underline;
@@ -65,8 +66,19 @@ p{
 }
 .upgrades ul li{
     border: solid 3px var(--text);
+    display: flex;
+    justify-content: space-between;
     margin-top: 4px;
     height: 4rem;
     line-height: 4rem;
-    padding-left: 11.5vw;
+    -webkit-user-select: none;
+}
+.upgrades ul li span{
+    text-align: right;
+}
+.upgrade{
+    margin-left: 20px;
+}
+.upgradePrice{
+    margin-right: 20px;
 }
