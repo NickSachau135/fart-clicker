@@ -20,7 +20,7 @@ document.getElementById('coffee').addEventListener('click',coffeeItem)
 document.getElementById('laxative').addEventListener('click', laxativeItem)
 
 let playsound = function() {
-    audio.setAttribute("src", "fart.mp3");
+    audio.setAttribute("src", "media/Fart.mp3");
     audio.play()
 }
 
@@ -44,26 +44,42 @@ function milkItem() {
 function beansItem() {
     if(farts >= 100) {
         beans++;
-        setInterval(function(){farting()}, 2500);
+        setInterval(function(){
+            for(let i = 0; i <= 5; i++) {
+                farting();
+            }
+        }, 5000);
     }
 }
 
 function energyItem() {
     if(farts >= 500) {
         energy++;
-        setInterval(function(){farting()}, 2500);
+        setInterval(function(){
+            for(let i = 0; i <= 10; i++) {
+                farting();
+            }
+        }, 10000);
     }
 }
 function coffeeItem() {
     if(farts >= 1000) {
         energy++;
-        setInterval(function(){farting()}, 2500);
+        setInterval(function(){
+            for(let i = 0; i <= 25; i++) {
+                farting();
+            }
+        }, 25000);
     }
 }
 function laxativeItem() {
     if(farts >= 5000) {
         energy++;
-        setInterval(function(){farting()}, 2500);
+        setInterval(function(){
+            for(let i = 0; i <= 50; i++) {
+                farting();
+            }
+        }, 50000);
     }
 }
 
