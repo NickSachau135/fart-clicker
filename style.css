@@ -1,0 +1,25 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+:root {
+    /* bababooey */
+    --background: rgb(49, 49, 49);
+    --text: white;
+}
+
+body {
+    min-height: 100vh;
+}
+
+#poopFart {
+    width: 200px;
+    transform: scale(1);
+}
